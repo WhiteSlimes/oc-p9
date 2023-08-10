@@ -13,7 +13,3 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
-
-window.addEventListener('load', function() {
-    document.getElementById('bootstrap-css').media = 'all';
-});
