@@ -12,10 +12,6 @@
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" href="https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qtHEWfSFXQ.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
 </head>
 <body>
 	<!-- Start TOP-HEADER content -->
@@ -215,6 +211,13 @@
 			window.addEventListener('load', function() {
 				document.getElementById('bootstrap-css').media = 'all';
 			});
+			window.onload = function() {
+				var link = document.createElement("link");
+				link.href = "https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap";
+				link.rel = "stylesheet";
+
+				document.body.appendChild(link);
+			}
 		</script>
 	</main>
 </body>
